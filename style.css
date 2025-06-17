@@ -1,0 +1,96 @@
+    @font-face {
+      font-family: "Vazir";
+      src: url("fonts/Vazir-FD-WOL.eot") format("eot"),
+           url("fonts/Vazir-FD-WOL.ttf") format("ttf"),
+           url("fonts/Vazir-FD-WOL.woff") format("woff"),
+           url("fonts/Vazir-FD-WOL.woff2") format("woff2");
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Vazir";
+      src: url("fonts/Vazir-Bold-FD-WOL.eot") format("eot"),
+           url("fonts/Vazir-Bold-FD-WOL.ttf") format("ttf"),
+           url("fonts/Vazir-Bold-FD-WOL.woff") format("woff"),
+           url("fonts/Vazir-Bold-FD-WOL.woff2") format("woff2");
+      font-weight: Bold;
+      font-style: normal;
+    }
+     @font-face {
+      font-family: "Vazir";
+      src: url("fonts/Vazir-Light-FD-WOL.eot") format("eot"),
+           url("fonts/Vazir-Light-FD-WOL.ttf") format("ttf"),
+           url("fonts/Vazir-Light-FD-WOL.woff") format("woff"),
+           url("fonts/Vazir-Light-FD-WOL.woff2") format("woff2");
+      font-weight: lighter;
+      font-style: normal;
+    }
+
+*, *::after, *::before {
+    font-family: "Vazir";
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-fluid {
+    min-height: 100vh;
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+}
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    /* background-color: rgb(223, 222, 222); */
+    min-height: 100vh;
+    padding-top: 10px;
+}
+.container header {
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0 20px;
+    box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.14);
+    -webkit-box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.14);
+    -moz-box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.14);
+}
+#add-note {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.new-note {
+    background-color: rgb(255, 255, 255);
+    width: 1000px;
+    height: 300px;
+    position: absolute;
+    /* justify-content:baseline; */
+    gap: 20px;
+    top: 200px;
+    right: 50%;
+    left: 50%;
+    transform: translate(50%);
+    border-radius: 25px;
+    padding: 20px;
+    
+}
+.new-note__form {
+    /* display: flex;
+    flex-direction: column; */
+}
+.new-note__header {
+    width: 100%;
+}
+
+.new-note__text {
+    width: 100%;
+}
