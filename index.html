@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Note App</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container-fluid">
-        <div class="container">
-            <header>
-                <button id="add-note">افزودن یادداشت جدید</button>
-            </header>
+      <div class="container">
+        <header>
+          <button id="add-note">افزودن یادداشت جدید</button>
+        </header>
+        <div class="notes-container">
+          <div class="note">
+            <h3>عنوان نوت</h3>
+            <p>متن نوت اینجا نوشته می شه</p>
+          </div>
+          <div class="note">
+            <h3>عنوان نوت</h3>
+            <p>متن نوت اینجا نوشته می شه</p>
+          </div>
+          <div class="note">
+            <h3>عنوان نوت</h3>
+            <p>متن نوت اینجا نوشته می شه</p>
+          </div>
         </div>
-        <div class="new-note">
-            <form class="new-note__form" action="submit">
-                    <input class="new-note__header" type="text">
-                    <textarea class="new-note__text" name="" id=""></textarea>
-                    <button> ذخیره یادداشت</button>
-            </form>
-            
-        </div>
+      </div>
+      <div class="overlay"></div>
+      <div class="new-note">
+        <form class="new-note__form" action="submit">
+          <input class="new-note__header" type="text" />
+          <textarea class="new-note__text" name="" id="" rows="10"></textarea>
+          <button class="new-note__btn">ذخیره یادداشت</button>
+        </form>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
